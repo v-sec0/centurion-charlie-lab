@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Medieval Font";
+  src: url(/fonts/BLKCHCRY.TTF);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oblivion Font";
+  src: url(/fonts/oblivion-font.ttf);
+}
+body {
+  font-family: "Medieval Font";
+  text-align: center;
+  background-image: url("/images/background.png");
+}
+
+p.curved-border {
+  display: inline-block;
+  border: 2px solid lightgoldenrodyellow;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  max-width: 80%;
+  font-size: large;
+}
+
+h1 {
+  font-family: "Oblivion Font";
+  background-image: url("/images/background-scroll.jpg");
+  color: white;
+}
+
+img {
+  border: 2px ridge white;
+  border-radius: 10px;
+}
+
+div.the-outcome {
+  display: inline-block;
+  border: 2px solid lightgoldenrodyellow;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  max-width: 80%;
+  font-size: large;
+}
+
+h3.the-bad-ending {
+  color: red;
+}
+
+h3.the-good-ending {
+  color: green;
+}
