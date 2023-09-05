@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Medieval Font";
-  src: url(oblivion-website-charlie376/fonts/BLKCHCRY.TTF);
+  src: url(/oblivion-website-charlie376/fonts/BLKCHCRY.TTF);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oblivion Font";
-  src: url(oblivion-website-charlie376/fonts/oblivion-font.ttf);
+  src: url(/oblivion-website-charlie376/fonts/oblivion-font.ttf);
 }
 body {
   font-family: "Medieval Font";
   text-align: center;
-  background-image: url("oblivion-website-charlie376/images/background.png");
+  background-image: url("/oblivion-website-charlie376/images/background.png");
 }
 
 p.curved-border {
@@ -27,7 +27,7 @@ p.curved-border {
 
 h1 {
   font-family: "Oblivion Font";
-  background-image: url("oblivion-website-charlie376/images/background-scroll.jpg");
+  background-image: url("/oblivion-website-charlie376/images/background-scroll.jpg");
   color: white;
 }
 
