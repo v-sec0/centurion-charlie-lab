@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Medieval Font";
-  src: url(/fonts/BLKCHCRY.TTF);
+  src: url(../fonts/BLKCHCRY.TTF);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oblivion Font";
-  src: url(/fonts/oblivion-font.ttf);
+  src: url(../fonts/oblivion-font.ttf);
 }
 body {
   font-family: "Medieval Font";
   text-align: center;
-  background-image: url("/images/background.png");
+  background-image: url("../images/background.png");
 }
 
 p.curved-border {
@@ -27,7 +27,7 @@ p.curved-border {
 
 h1 {
   font-family: "Oblivion Font";
-  background-image: url("/images/background-scroll.jpg");
+  background-image: url("../images/background-scroll.jpg");
   color: white;
 }
 
