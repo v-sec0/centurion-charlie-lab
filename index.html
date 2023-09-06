@@ -9,6 +9,7 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<!--   Just added a new introduction! -->
 <div class="wrapper" id="wholeIntro">
   <h1 class="backgroundTitle" id="welcome"> Your story begins</h1>
   <p class="start-narration" id="welcomeMessageOne" style="display: none;"> 
@@ -61,6 +62,7 @@
   <h3 class="the-good-ending"> THE GOOD ENDING</h3>
 </div>
 
+<!--   Turned the entire scene into a single element so I could easily hide it when choices are made -->
 <div class="wrapper" id="wholeScene" style="display: none;">
   <h1 id="sceneTitle">Today is the  First Era of Last Seed..</h1>
   <br>
@@ -82,7 +84,8 @@
     You don't know which one called for you, with whom do you speak?
   </p>
 </div>
-  
+
+<!-- Placed Images into container so I have more control over them and can easily implement differnt CSS effects.  -->
 <br>
 <div class="image-container">
   <img class="selection" src="/oblivion-website-charlie376/images/npcGuard.png" style="width: 15%; display: none;" id="theGuard">
@@ -104,6 +107,7 @@
 </div>
 
 <br>
+<!--  One single button is now responsible for everything!! -->
 <button class="button" id="btnMain">
   Start
 </button>
