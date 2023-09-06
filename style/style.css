@@ -79,6 +79,8 @@ h1 {
   width: auto;
   height: auto;
   position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .image-container div {
