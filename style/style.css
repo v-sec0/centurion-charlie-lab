@@ -79,17 +79,17 @@ h1 {
   width: auto;
   height: auto;
   position: relative;
-  overflow: hidden;
-  word-wrap: break-word;
 }
 
 .image-container div {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
   display: none;
-  color: #fff; 
+  color: white;
+  margin: 0;
+  white-space: normal; 
 }
 
 .image-container img.selection {
