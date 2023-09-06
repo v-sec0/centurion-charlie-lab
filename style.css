@@ -1,0 +1,127 @@
+/*  CHANGE ALL REFERENCES AFTER EDITING */
+@font-face {
+  font-family: "Medieval Font";
+  src: url(/oblivion-website-charlie376/fonts/BLKCHCRY.TTF);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oblivion Font";
+  src: url(/oblivion-website-charlie376/fonts/oblivion-font.ttf);
+}
+body {
+  font-family: "Medieval Font";
+  text-align: center;
+  background-image: url("/oblivion-website-charlie376/images/background.png");
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 5px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+p.narration {
+  display: inline-block;
+  border: 2px solid lightgoldenrodyellow;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  max-width: 80%;
+  font-size: large;
+}
+
+p.prompt-narration {
+  display: inline-block;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightblue;
+  max-width: 80%;
+  font-size: large;
+}
+
+p.dialouge {
+  display: inline-block;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightgray;
+  max-width: 80%;
+  font-size: large;
+  font-style: italic;
+}
+
+p.start-narration {
+  display: inline-block;
+  border: 2px solid lightcoral;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightcoral;
+  max-width: 80%;
+  font-size: large;
+}
+
+h1 {
+  font-family: "Oblivion Font";
+  background-image: url("/oblivion-website-charlie376/images/background-scroll.jpg");
+  color: white;
+}
+
+.image-container {
+  display:inline;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.image-container div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  display: none;
+  color: #fff; 
+  font-size:medium;
+}
+
+.image-container img.selection {
+  border: 2px ridge white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image-container:hover img.selection {
+  opacity: 0.6;
+  filter:brightness(35%)
+}
+
+.image-container:hover div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.the-outcome {
+  display: inline-block;
+  border: 2px solid lightgoldenrodyellow;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: lightgoldenrodyellow;
+  max-width: 80%;
+  font-size: large;
+}
+
+h3.the-bad-ending {
+  color: red;
+}
+
+h3.the-good-ending {
+  color: green;
+}
