@@ -1,50 +1,93 @@
 $(document).ready(function () {
     console.log("Ready to go!");
+    var clickCount = 0;
   
+    // Introduction
+    $("#btnMain").click(function() {
+        clickCount++;
+        switch (clickCount) {
+            case 1:
+                $("#welcomeMessageOne").fadeIn();
+                theButton.text("Continue");
+                break;   
+            case 2:
+                $("#welcomeMessageTwo").fadeIn();
+                break;
+            case 3:
+                $("#concernedCitizen").fadeIn();
+                break;
+            case 4:
+                $("#concernedDialouge").fadeIn();
+                break;
+            case 5:
+                $("#welcomeMessageThree").fadeIn();
+                theButton.text("Enter the City");
+                break;
+            case 6:
+                $("#wholeIntro").hide();
+                theScene.fadeIn();
+                theButton.text("Continue");
+                break;
+            case 7:
+                $("#sceneOne").fadeIn();
+                break;
+            case 8:
+                $("#sceneTwo").fadeIn();
+                break;
+            case 9:
+                $("#sceneThree").fadeIn();
+                $("#scenePrompt").fadeIn();
+                break;
+            case 10:
+                theGuard.fadeIn();
+                theMerchant.fadeIn();
+                thePriest.fadeIn();
+                theButton.text("Reset");
+                theButton.hide();
+                break;  
+            default:
+                location.reload();  
+            
+
+        }
+    });
+
+
     // Variables Assigned
-    let theGuard = $("#theGuard")
-    let thePriest = $("#thePriest")
-    let theMerchant = $("#theMerchant")
+    let theGuard = $("#theGuard");
+    let thePriest = $("#thePriest");
+    let theMerchant = $("#theMerchant");
+    let theScene = $("#wholeScene");
+    let theButton = $("#btnMain")
+
 
     // The Merchant ending
     theMerchant.click(function() {
-        $("#intro").hide();
-        $("#prompt").hide();
+        theScene.hide();
         theGuard.hide();
         thePriest.hide();
         $("#theMerchantEnding").fadeIn();
-        $("#btnReload").fadeIn();
-        $("#title").hide();
+        theButton.fadeIn();
+        
     });
 
     // The Guard ending
     theGuard.click(function() {
-        $("#intro").hide();
-        $("#prompt").hide();
+        theScene.hide();
         theMerchant.hide();
         thePriest.hide();
         $("#theGuardEnding").fadeIn();
-        $("#btnReload").fadeIn();
-        $("#title").hide();
+        theButton.fadeIn();
     });
 
     // The Priest ending
     thePriest.click(function() {
-        $("#intro").hide();
-        $("#prompt").hide();
+       theScene.hide();
         theMerchant.hide();
         theGuard.hide();
         $("#thePriestEnding").fadeIn();
-        $("#btnReload").fadeIn();
-        $("#title").hide();
+        theButton.fadeIn();
     });
-
-
-    // Prompt the user for reset
-    $("#btnReload").on("click", function() {
-        location.reload();
-    });
-
 
 
 });

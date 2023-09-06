@@ -4,19 +4,34 @@
   <meta charset="UTF-8">
   <title>BRAVO LAB - WATKINS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="/oblivion-website-charlie376/style/style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style/style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<br>
-<h1 id="title">Today is the  First Era of Last Seed..</h1>
+<div class="wrapper" id="wholeIntro">
+  <h1 class="backgroundTitle" id="welcome"> Your story begins</h1>
+  <p class="start-narration" id="welcomeMessageOne" style="display: none;"> 
+    You are the famed Hero of Kvatch, after getting back from carrying the simpleton that is Martin Septim to Cloud Ruler Temple, you decide it's time for you to hit the main city and get a taste of what it has to offer.
+  </p>
+  <p class="start-narration" id="welcomeMessageTwo" style="display: none;">
+    You only have a handful of septims in your pocket but you're eager to see what awaits you inside the city. As you approach the gate, you are called by a mysterious figure by the entrance. 
+  </p>
+  <img src="/images/concernedNPC.jpg" id="concernedCitizen" style="width: 45%; display: none;">
+  <p class="dialouge" id="concernedDialouge" style="display: none;">
+    <em> Be weary traveler, here in the Imperial capital, nothing is as it seems. You must use you wits in order to survive..</em>
+  </p>
+  <br>
+  <p class="narration" style="display: none;" id="welcomeMessageThree">
+    You stare puzzled at the man, thinking to yourself about how crazy this guy must be to think the Imperial City, the Heart of Cyridill, is unsafe. With that, you enter the Imperial City.
+  </p>
+</div>
 
 <!-- These are the collection of available endings -->
 <div class="the-outcome" id="theMerchantEnding" style="display: none;">
   <p>
     As you turn towards the vibrant saleswoman, her eyes light up brighter than the moons of Masser and Secunda combined. 
-    "Ah! A connoisseur of exquisite oddities, I see!" she exclaims, her voice dripping with more charm than a nymph in a moonlit grove. She produces a tiny vial from her technicolor satchel, the liquid inside shimmering mysteriously. "This, dear traveler, is Skooma – Tamriel’s premium energy drink!" she proclaims with a sly smile. 
+    <p class="dialouge">"Ah! A connoisseur of exquisite oddities, I see!"</p> she exclaims, her voice dripping with more charm than a nymph in a moonlit grove. She produces a tiny vial from her technicolor satchel, the liquid inside shimmering mysteriously.<p class="dialouge">"This, dear traveler, is Skooma – Tamriel’s premium energy drink!" she proclaims with a sly smile.</p>  
     Without giving you a moment to think, she places it into your hands, persuading you it's the elixir of true champions. Before you know it, you've parted with half your gold for it. 
     One sip, and the world turns a whimsical shade of wonder. And just like that, you're hooked – forever a Skooma addict
   </p>
@@ -27,44 +42,78 @@
 <div class="the-outcome" id="theGuardEnding" style="display: none;">
   <p>
     As you turn towards the guard, the glint from his polished armor is momentarily obscured by the dark, intimidating silhouette of your Daedric armor. He raises an eyebrow, a smirk forming. 
-    "By the Nine, what do we have here? Wearing Daedric armor in within the Imperial providence?" He takes a step closer, his tone dripping with feigned awe. "Quite the bold fashion statement there, traveler. But... where's your tax stamp for such a prestigious artifact?"
-    His grin fades to stern professionalism. "Wearing Daedric armor without the proper tax stamp is a violation of Imperial regulation. You're coming with me criminal scum.
-    "And just like that, your grandeur in Daedric attire becomes your ticket to a not-so-comfortable stay in the Cyrodiil cells. Maybe next time, you'll think twice about flaunting forbidden finery without its paperwork!
+    <p class="dialouge">"By the Nine, what do we have here? Wearing Daedric armor in within the Imperial providence?"</p> He takes a step closer, his tone dripping with feigned awe. <p class="dialouge">"Quite the bold fashion statement there, traveler. But... where's your tax stamp for such a prestigious artifact?"</p>
+    His grin fades to stern professionalism. <p class="dialouge">"Wearing Daedric armor without the proper tax stamp is a violation of Imperial regulation. You're coming with me criminal scum."</p>
+    And just like that, your grandeur in Daedric attire becomes your ticket to a not-so-comfortable stay in the Cyrodiil cells. Maybe next time, you'll think twice about flaunting forbidden finery without its paperwork!
   </p>
   <h3 class="the-bad-ending"> THE BAD ENDING</h3>
 </div>
 
 <div class="the-outcome" id="thePriestEnding" style="display: none;">
   <p>
-    As you approach the fervent priest, he suddenly stiffens. "I sense... the dark energy of Daedric worship about you!" he declares. Yet, he's blindfolded, his eyes obscured by a thick piece of cloth.
-    "Prepare to meet your judgment!" he thunders, pulling out a sword. He takes a wild swing... at thin air, a good five feet to your left.
-    You sidestep easily, a bit bemused. He takes another swing, this time almost tripping over a nearby stone. "Repent, Daedra worshiper! Feel the wrath of the Divines!" he cries, still flailing ineffectively.
+    As you approach the fervent priest, he suddenly stiffens. 
+    <p class="dialouge">"I sense... the dark energy of Daedric worship about you!"</p> he declares. Yet, he's blindfolded, his eyes obscured by a thick piece of cloth.
+    <p class="dialouge">"Prepare to meet your judgment!"</p> he thunders, pulling out a sword. He takes a wild swing... at thin air, a good five feet to your left.
+    You sidestep easily, a bit bemused. He takes another swing, this time almost tripping over a nearby stone. 
+    <p class="dialouge">"Repent, Daedra worshiper! Feel the wrath of the Divines!"</p> he cries, still flailing ineffectively.
     It's clear that while his spirit is fervent, his accuracy leaves much to be desired. After a few more wild attempts to vanquish the 'evil' in front of him, he seems to tire out, muttering to himself about the elusive power of Daedra. You decide it might be best to quietly slip away, chuckling at the surreal encounter.
   </p>
   <h3 class="the-good-ending"> THE GOOD ENDING</h3>
 </div>
 
-<div class="content-wrapper" id="intro">
-  <p class="curved-border" id="part-one"><strong>As you wander the streets of Cyrodiil,</strong> your impeccable sense of fashion—a blend of Daedric armor and mismatched, Orcish boots—unintentionally draws attention.</p> 
+<div class="wrapper" id="wholeScene" style="display: none;">
+  <h1 id="sceneTitle">Today is the  First Era of Last Seed..</h1>
   <br>
-  <p class="curved-border" id="part-two">"<em>Hey stop! </em>", a voice says behind you. You turn around.</p>
+  <p class="narration" id="sceneOne" style="display: none;">
+    <strong>As you wander the streets of Cyrodiil,</strong> your impeccable sense of fashion—a blend of Daedric armor and mismatched, Orcish boots—unintentionally draws attention.
+  </p> 
   <br>
-  <p class="curved-border" id="part-three">There's a guard, his armor polished to a mirror sheen, his eyes suspiciously narrowing, seemingly convinced your very existence is a capital offense. Close on his heels, a saleswoman swaggers towards you, her robe practically dripping with desperation, clutching a sack that jingles suggestively with what might be gold... Lastly, from the shadow of a nearby statue, a preacher steps forward, zeal burning in his eyes, robes flapping vigorously even though there's no wind. Their paths converge on you like a catastrophic cosmic alignment.</p>
-
+  <p class="dialouge" id="sceneTwo" style="display: none;">
+    "<em>Hey stop! </em>", a voice says behind you.
+  </p>
+  <br>
+  <p class="narration" id="sceneThree" style="display: none;">
+    You turn around. There's a guard, his armor polished to a mirror sheen, his eyes suspiciously narrowing, seemingly convinced your very existence is a capital offense. 
+    Close on his heels, a saleswoman swaggers towards you, her robe practically dripping with desperation, clutching a sack that jingles suggestively with what might be gold... 
+    Lastly, from the shadow of a nearby statue, a preacher steps forward, zeal burning in his eyes, robes flapping vigorously even though there's no wind. 
+    Their paths converge on you like a catastrophic cosmic alignment.
+  </p>
+  <p class="prompt-narration" id="scenePrompt" style="display: none;">
+    You don't know which one called for you, with whom do you speak?
+  </p>
+</div>
+  
+<br>
+<div class="image-container">
+  <img class="selection" src="/images/npcGuard.png" style="width: 15%; display: none;" id="theGuard">
+  <div>
+    As you stare closely at the guard, you began to notice a smile form ever so slightly on his face. He then quickly catches himself and is back to giving a pretty intimidating glare.
+    <br> Talk to him?
+  </div>
+</div>
+<div class="image-container">
+  <img class="selection" src="/images/npcMerchant.png" style="width: 15%; display: none;" id="theMerchant">
+  <div>
+    As you stare closely at the merchant, you began to notice a small vial on her hip. The bottle looks vaguely familar but you can't seem to recognize it. 
+    <br> Talk to her?
+  </div>
+</div>
+<div class="image-container">
+  <img class="selection" src="/images/npcPriest.png" style="width: 15%; display: none;" id="thePriest">
+  <div>
+    As you stare closely at the priest, you began to notice his blindfold. However, you can't help but shake the feeling that it's placement was deliberate.
+    <br> Talk to him?
+  </div>
 </div>
 
-<p class="curved-border" id="prompt">You don't know which one called for you, with whom do you speak?</p>
-
 <br>
-<img src="images/npcGuard.png" style="width: 20%;" id="theGuard">
-<img src="images/npcMerchant.png" style="width: 20%;" id="theMerchant">
-<img src="images/npcPriest.png" style="width: 20%;" id="thePriest">
-
-<button id="btnReload" style="display: none;">Reset</button>
+<button class="button" id="btnMain">
+  Start
+</button>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script><script  src="/oblivion-website-charlie376/scripts/script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script><script  src="./scripts/script.js"></script>
 
 </body>
 </html>
