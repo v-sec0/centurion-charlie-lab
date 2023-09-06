@@ -108,20 +108,12 @@ h1 {
   align-items: center;
 }
 
-div.the-outcome {
-  display: inline-block;
-  border: 2px solid lightgoldenrodyellow;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: lightgoldenrodyellow;
-  max-width: 80%;
-  font-size: large;
-}
-
 h3.the-bad-ending {
   color: red;
+  border: lightgoldenrodyellow;
 }
 
 h3.the-good-ending {
   color: green;
+  border: lightgoldenrodyellow;
 }
