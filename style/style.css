@@ -88,7 +88,8 @@ h1 {
   transform: translate(-50%, -50%); 
   display: none;
   color: #fff; 
-  font-size:medium;
+  font-size: medium;
+  display: none;
 }
 
 .image-container img.selection {
