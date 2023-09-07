@@ -57,12 +57,12 @@ $(document).ready(function () {
     $('.image-container').on('mouseenter', function() {
         // Start a timer when mouse enters
         timeout = setTimeout(function() {
-            $('.hover-text').fadeIn(); // Or any other effect you want
-        }, 10000); // 10000ms = 10 seconds
+            $('.image-container div').fadeIn(); // Or any other effect you want
+        }, 5000); // 10000ms = 10 seconds
     }).on('mouseleave', function() {
         // If mouse leaves before 10 seconds, clear the timer
         clearTimeout(timeout);
-        $('.hover-text').fadeOut(); // Ensure it hides if it had shown
+        $('.image-container div').fadeOut(); // Ensure it hides if it had shown
     });
 
     // Variables Assigned
