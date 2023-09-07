@@ -2,15 +2,7 @@ $(document).ready(function () {
     console.log("Ready to go!");
     var clickCount = 0;
     var timeout;
-
-    $('#.image-container').mouseenter(function() {
-        timeout = setTimeout(function() {
-            $('#.image-container div').show();
-        }, 10000);
-    }).mouseleave(function() {
-        clearTimeout(timeout);
-    })
-  
+    
     // Introduction
     $("#btnMain").click(function() {
         clickCount++;
@@ -61,6 +53,17 @@ $(document).ready(function () {
         }
     });
 
+    // Function for hover text
+    $('.image-container').on('mouseenter', function() {
+        // Start a timer when mouse enters
+        timeout = setTimeout(function() {
+            $('.hover-text').fadeIn(); // Or any other effect you want
+        }, 10000); // 10000ms = 10 seconds
+    }).on('mouseleave', function() {
+        // If mouse leaves before 10 seconds, clear the timer
+        clearTimeout(timeout);
+        $('.hover-text').fadeOut(); // Ensure it hides if it had shown
+    });
 
     // Variables Assigned
     let theGuard = $("#theGuard");
