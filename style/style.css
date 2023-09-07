@@ -100,7 +100,7 @@ h1 {
 .image-container:hover img.selection {
   opacity: 0.6;
   filter:brightness(35%);
-  transition: 5s ease;
+  transition: 5s ease-in-out;
 }
 
 .image-container:hover div {
