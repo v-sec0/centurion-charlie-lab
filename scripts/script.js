@@ -1,6 +1,15 @@
 $(document).ready(function () {
     console.log("Ready to go!");
     var clickCount = 0;
+    var timeout;
+
+    $('#.image-container').mouseenter(function() {
+        timeout = setTimeout(function() {
+            $('#.image-container div').show();
+        }, 10000);
+    }).mouseleave(function() {
+        clearTimeout(timeout);
+    });
   
     // Introduction
     $("#btnMain").click(function() {

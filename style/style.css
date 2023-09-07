@@ -103,7 +103,7 @@ h1 {
 }
 
 .image-container:hover div {
-  display: block;
+  /* display: block; */
   justify-content: center;
   align-items: center;
 }
