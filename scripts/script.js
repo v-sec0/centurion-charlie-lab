@@ -57,12 +57,12 @@ $(document).ready(function () {
     $('.image-container').on('mouseenter', function() {
         // Start a timer when mouse enters
         timeout = setTimeout(function() {
-            $(this).find("#div").fadeIn(); // Or any other effect you want
+            alert("Image Held for 3 seconds");
         }, 3000);
     }).on('mouseleave', function() {
         // If mouse leaves before 10 seconds, clear the timer
         clearTimeout(timeout);
-        $(this).find("#div").fadeOut(); // Ensure it hides if it had shown
+        $(this).find("#div").fadeOut(); 
     });
 
     // Variables Assigned
