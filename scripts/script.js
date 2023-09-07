@@ -58,7 +58,7 @@ $(document).ready(function () {
         // Start a timer when mouse enters
         timeout = setTimeout(function() {
             $('.image-container div').fadeIn(); // Or any other effect you want
-        }, 5000); // 10000ms = 10 seconds
+        }, 3000);
     }).on('mouseleave', function() {
         // If mouse leaves before 10 seconds, clear the timer
         clearTimeout(timeout);
