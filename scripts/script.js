@@ -57,11 +57,13 @@ $(document).ready(function () {
     $('.image-container').on('mouseenter', function() {
         // Start a timer when mouse enters
         timeout = setTimeout(function() {
-            alert("Image Held for 3 seconds");
+            console.log("Hover In");
+            $(this).find("#div").fadeIn();
         }, 3000);
     }).on('mouseleave', function() {
         // If mouse leaves before 10 seconds, clear the timer
         clearTimeout(timeout);
+        console.log("Hover Out");
         $(this).find("#div").fadeOut(); 
     });
 
