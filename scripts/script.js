@@ -58,10 +58,10 @@ $(document).ready(function () {
         var $container = $(this); // Store the reference to the .image-container
         timeout = setTimeout(function() {
             $container.find(".hover-text").fadeIn();
-        }, 3000);
+        }, 2700);
     }).on('mouseleave', function() {
         clearTimeout(timeout);
-        $(this).find(".hover-text").fadeOut(); 
+        $(this).find(".hover-text").hide(); 
     });
 
     // Variables Assigned
