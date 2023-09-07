@@ -55,16 +55,13 @@ $(document).ready(function () {
 
     // Function for hover text
     $('.image-container').on('mouseenter', function() {
-        // Start a timer when mouse enters
+        var $container = $(this); // Store the reference to the .image-container
         timeout = setTimeout(function() {
-            console.log("Hover In");
-            $(this).find("#div").fadeIn();
+            $container.find(".hover-text").fadeIn();
         }, 3000);
     }).on('mouseleave', function() {
-        // If mouse leaves before 10 seconds, clear the timer
         clearTimeout(timeout);
-        console.log("Hover Out");
-        $(this).find("#div").fadeOut(); 
+        $(this).find(".hover-text").fadeOut(); 
     });
 
     // Variables Assigned
