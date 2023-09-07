@@ -9,7 +9,7 @@ $(document).ready(function () {
         }, 10000);
     }).mouseleave(function() {
         clearTimeout(timeout);
-    });
+    })
   
     // Introduction
     $("#btnMain").click(function() {
