@@ -1,14 +1,21 @@
 <!DOCTYPE html>
+<!-- 
+  Levon Watkins
+  Oblivion Charlie Website
+  Professor Cumbie; CIS376
+ -->
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CHARLIE LAB - WATKINS</title>
+  <title>Oblivion Charlie Website - WATKINS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style/style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
+
+<!-- Added in a background story and another incounter to give clues to the viewer -->
 <div class="wrapper" id="wholeIntro">
   <h1 class="backgroundTitle" id="welcome"> Your story begins</h1>
   <p class="start-narration" id="welcomeMessageOne" style="display: none;"> 
@@ -40,6 +47,7 @@
   <br>
 </div>
 
+<!-- Everything is now organized and I added new lines to break up the longer elements. -->
 <div class="the-outcome" id="theGuardEnding" style="display: none;">
   <p class="narration">As you turn towards the guard, the glint from his polished armor is momentarily obscured by the dark, intimidating silhouette of your Daedric armor. He raises an eyebrow, a smirk forming.</p>
   <p class="dialouge">"By the Nine, what do we have here? Wearing Daedric armor in within the Imperial providence?"</p> 
@@ -64,6 +72,9 @@
   <h3 class="the-good-ending"> THE GOOD ENDING</h3>
 </div>
 
+<!-- Same ol' scene layout, but I tidied up the code to look organized -->
+<!-- Also wrapped everything in a neat little wrapper -->
+<!-- Added different appearances for different types of text e.i dialouge vs. narration -->
 <div class="wrapper" id="wholeScene" style="display: none;">
   <h1 id="sceneTitle">Today is the  First Era of Last Seed..</h1>
   <br>
@@ -87,6 +98,8 @@
 </div>
   
 <br>
+
+<!-- Images are now in a container and now you have additional snippets of clues that appear when you hover over them -->
 <div class="image-container">
   <img class="selection" src="/oblivion-website-charlie376/images/npcGuard.png" style="width: 15%; display: none;" id="theGuard">
   <div class="hover-text">
@@ -107,6 +120,7 @@
 </div>
 
 <br>
+<!-- ONE BUTTON DOES EVERYTHING! -->
 <button class="button" id="btnMain">
   Start
 </button>
