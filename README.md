@@ -1,3 +1,3 @@
-# Charlie Lab for CIS 376
+# Oblivion Story Website for Charlie Lab
 
-Check out my page.
+* Look keys! I'll know it when I see it..!*
