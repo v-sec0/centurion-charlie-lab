@@ -1,19 +1,19 @@
 /*  CHANGE ALL REFERENCES AFTER EDITING */
 @font-face {
   font-family: "Medieval Font";
-  src: url(/oblivion-website-charlie376/fonts/BLKCHCRY.TTF);
+  src: url(/centurion-charlie-lab/fonts/BLKCHCRY.TTF);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oblivion Font";
-  src: url(/oblivion-website-charlie376/fonts/oblivion-font.ttf);
+  src: url(/centurion-charlie-lab/fonts/oblivion-font.ttf);
 }
 body {
   font-family: "Medieval Font";
   text-align: center;
-  background-image: url("/oblivion-website-charlie376/images/background.png");
+  background-image: url("/centurion-charlie-lab/images/background.png");
 }
 
 button {
